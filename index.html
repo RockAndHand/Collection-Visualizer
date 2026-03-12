@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Collection Visualizer</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Collection Framework Visualizer</h1>
+    </header>
+
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Structures</h2>
+
+        <button class="structure-btn" data-structure="arraylist">
+          ArrayList
+        </button>
+
+        <button class="structure-btn" data-structure="stack">Stack</button>
+
+        <button class="structure-btn" data-structure="queue">Queue</button>
+
+        <button class="structure-btn" data-structure="hashset">HashSet</button>
+        <button class="structure-btn" data-structure="linkedlist">
+          LinkedList
+        </button>
+      </aside>
+
+      <!-- Workspace -->
+      <section class="workspace">
+        <!-- Controls -->
+        <div class="controls">
+          <input type="number" id="valueInput" placeholder="Value" />
+
+          <button id="addBtn">Add</button>
+          <button id="removeBtn">Remove</button>
+          <button id="searchBtn">Search</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+
+        <!-- Visualization -->
+        <div class="visualization" id="visualizationArea">
+          <p class="placeholder">Select a structure to begin</p>
+        </div>
+
+        <!-- Explanation -->
+        <div class="explanation">
+          <h3>Explanation</h3>
+
+          <p id="explainText">Operations will appear here.</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
